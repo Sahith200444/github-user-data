@@ -1,12 +1,15 @@
-# GitHub User and Repository Analysis
+# GitHub Users and Repositories in Delhi
 
-- This project analyzes GitHub users in Delhi with over 100 followers.
-- Data was scraped using the GitHub API to extract user and repository information.
-- The analysis provides insights into user engagement and repository characteristics.
+This repository contains information about GitHub users in Delhi with over 100 followers and their repositories.
 
-## Findings
-- The average number of followers among the sampled users is X.
-- Python is the most commonly used programming language among the repositories.
+## Data
 
-## Recommendations
-- Developers should consider collaborating on popular repositories to enhance their visibility.
+- `users.csv`: Contains information about each user.
+- `repositories.csv`: Contains information about the repositories of these users.
+
+## Approach
+
+1. Fetched users in Delhi with over 100 followers using the GitHub Search API.
+2. Cleaned up company names and parsed user details.
+3. Fetched up to 500 most recently pushed repositories for each user.
+4. Stored the data in CSV files.
